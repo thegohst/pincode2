@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinCode">
+        <attr name="boxCount" format="integer"/>
+        <attr name="imageResource" format="reference"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="boxWidthAndHeight" format="dimension"/>
+        <attr name="textColor" format="reference"/>
+        <attr name="strokeWidth" format="integer"/>
+        <attr name="boxColor" format="reference"/>
+        <attr name="highlightedBoxColor" format="reference"/>
+        <attr name="marginBetweenBox" format="reference"/>
+        <attr name="hideText" format="boolean"/>
+    </declare-styleable>
+</resources>
