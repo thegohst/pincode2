@@ -45,6 +45,13 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
     private int imageWidth = 0;
     private int imageHeight = 0;
     private float textSize;
+    @ColorInt
+    private int boxColor = Color.GRAY;
+    @ColorInt
+    private int highlightedBoxColor = Color.BLACK;
+
+    @ColorInt
+    private int textColor = Color.BLACK;
 
     public PinCode(Context context) {
         super(context);
@@ -114,6 +121,24 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
 
             this.underlineStrokeWidth = strokeWidth;
         }
+
+
+        int highlightedBoxColor = a.getColor(R.styleable.PinCode_highlightedBoxColor, 0);
+
+        if (highlightedBoxColor != 0) {
+            this.highlightedBoxColor = highlightedBoxColor;
+        }
+
+        int boxColor = a.getColor(R.styleable.PinCode_boxColor, 0);
+        if (highlightedBoxColor != 0) {
+            this.boxColor = boxColor;
+        }
+
+        int textColor = a.getColor(R.styleable.PinCode_textColor, 0);
+        if (textColor != 0) {
+
+            this.textColor = textColor;
+        }
         a.recycle();
     }
 
@@ -139,7 +164,7 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
 
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setDither(true);
-        paint.setColor(Color.LTGRAY);
+        paint.setColor(boxColor);
         paint.setStrokeWidth(underlineStrokeWidth);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeCap(Paint.Cap.ROUND);
@@ -148,7 +173,7 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
 
 
         selectedRectPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        selectedRectPaint.setColor(Color.BLACK);
+        selectedRectPaint.setColor(highlightedBoxColor);
         selectedRectPaint.setStrokeWidth(underlineStrokeWidth);
         selectedRectPaint.setStyle(Paint.Style.STROKE);
         selectedRectPaint.setStrokeCap(Paint.Cap.ROUND);
@@ -158,7 +183,7 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
 
 
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        textPaint.setColor(Color.BLACK);
+        textPaint.setColor(textColor);
         textPaint.setTextAlign(Paint.Align.CENTER);
         textPaint.setTextSize(textSize);
 

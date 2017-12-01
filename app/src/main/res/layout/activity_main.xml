@@ -10,8 +10,9 @@
 
     <mlikamohamed.com.pincode.PinCode
             xmlns:pin="http://schemas.android.com/apk/res-auto"
-pin:boxColor="@color/colorAccent"
-pin:strokeWidth="9dp"
+            pin:highlightedBoxColor="@color/colorPrimary"
+            pin:boxColor="@color/colorAccent"
+            pin:textColor="@color/colorPrimaryDark"
             pin:boxCount="4"
             android:layout_width="wrap_content"
             android:id="@+id/pinCode"
