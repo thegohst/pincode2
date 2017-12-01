@@ -14,7 +14,6 @@ In your `build.gradle`:
 compile 'mm.mlika.android:pincode2:5'
 
 ```
-
 ## License
 
     Copyright 2017
