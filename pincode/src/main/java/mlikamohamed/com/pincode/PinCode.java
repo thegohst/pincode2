@@ -109,6 +109,11 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
             this.width = widthAndHeight;
 
         }
+        int strokeWidth = a.getDimensionPixelSize(R.styleable.PinCode_strokeWidth, -1);
+        if (strokeWidth > 0) {
+
+            this.underlineStrokeWidth = strokeWidth;
+        }
         a.recycle();
     }
 
@@ -251,7 +256,7 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
-        int width ;
+        int width;
         int height;
 
 
@@ -261,7 +266,8 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
         } else {
             width = ((this.width + 2 * pad + paddintLeft) * itemCount) + 2 * pad;
 
-        }height = this.width + itemCount * pad;
+        }
+        height = this.width + itemCount * pad;
         width = MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY);
         height = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY);
 
