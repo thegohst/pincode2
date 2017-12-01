@@ -6,7 +6,7 @@
         <attr name="textSize" format="dimension"/>
         <attr name="boxWidthAndHeight" format="dimension"/>
         <attr name="textColor" format="reference"/>
-        <attr name="strokeWidth" format="integer"/>
+        <attr name="strokeWidth" format="dimension"/>
         <attr name="boxColor" format="reference"/>
         <attr name="highlightedBoxColor" format="reference"/>
         <attr name="marginBetweenBox" format="reference"/>
