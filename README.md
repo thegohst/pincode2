@@ -5,7 +5,7 @@ If you find CookieBar2 useful, give it a
 
 ## Screenshot
 
-            <center><img src="https://media.giphy.com/media/xT0xenUf82l9V0q68E/giphy.gif"></center>
+<center><img src="https://media.giphy.com/media/xT0xenUf82l9V0q68E/giphy.gif"></center>
 
 
 ## GetingStarted
