@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 17
         targetSdkVersion 26
-        versionCode 5
-        versionName "5.1"
+        versionCode 6
+        versionName "5.3"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -36,7 +36,7 @@ dependencies {
 ext {
     PUBLISH_GROUP_ID = 'mm.mlika.android'
     PUBLISH_ARTIFACT_ID = 'pincode2'
-    PUBLISH_VERSION = '5.2'
+    PUBLISH_VERSION = '5.3'
 }
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
 //./gradlew clean build generateRelease
