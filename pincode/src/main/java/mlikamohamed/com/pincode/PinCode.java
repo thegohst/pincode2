@@ -15,6 +15,7 @@ import android.support.annotation.ColorInt;
 import android.support.annotation.DrawableRes;
 import android.text.InputFilter;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.TypedValue;
 
 import java.util.ArrayList;
@@ -116,6 +117,14 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
             this.width = widthAndHeight;
 
         }
+
+        int marginBetweenBox = a.getDimensionPixelSize(R.styleable.PinCode_marginBetweenBox, -1);
+        Log.w(TAG, "mlika paddingLeft value:" + marginBetweenBox);
+
+        if (marginBetweenBox != -1) {
+            this.paddintLeft = marginBetweenBox;
+        }
+
         int strokeWidth = a.getDimensionPixelSize(R.styleable.PinCode_strokeWidth, -1);
         if (strokeWidth > 0) {
 

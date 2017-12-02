@@ -14,6 +14,5 @@ public class MainActivity extends AppCompatActivity {
 
         PinCode pinCode = findViewById(R.id.pinCode);
         pinCode.showText();
-
     }
 }

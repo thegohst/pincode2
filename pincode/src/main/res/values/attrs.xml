@@ -5,11 +5,11 @@
         <attr name="imageResource" format="reference"/>  <!-- ok -->
         <attr name="textSize" format="dimension"/> <!-- ok -->
         <attr name="boxWidthAndHeight" format="dimension"/> <!-- ok -->
-        <attr name="textColor" format="color"/>
-        <attr name="strokeWidth" format="dimension"/>
-        <attr name="boxColor" format="color"/>
-        <attr name="highlightedBoxColor" format="color"/>
-        <attr name="marginBetweenBox" format="reference"/>
+        <attr name="textColor" format="color"/>  <!-- ok -->
+        <attr name="strokeWidth" format="dimension"/>  <!-- ok -->
+        <attr name="boxColor" format="color"/>  <!-- ok -->
+        <attr name="highlightedBoxColor" format="color"/>  <!-- ok -->
+        <attr name="marginBetweenBox" format="dimension"/>
         <attr name="hideText" format="boolean"/>
     </declare-styleable>
 </resources>
