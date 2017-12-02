@@ -36,7 +36,7 @@ dependencies {
 ext {
     PUBLISH_GROUP_ID = 'mm.mlika.android'
     PUBLISH_ARTIFACT_ID = 'pincode2'
-    PUBLISH_VERSION = '5'
+    PUBLISH_VERSION = '5.2'
 }
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
 //./gradlew clean build generateRelease

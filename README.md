@@ -15,7 +15,7 @@ In your `build.gradle`:
 
 ```java
 
-		compile 'mm.mlika.android:pincode2:5'
+		compile 'mm.mlika.android:pincode2:5.2'
 
 ```
 
