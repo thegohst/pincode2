@@ -13,6 +13,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         PinCode pinCode = findViewById(R.id.pinCode);
+        pinCode.setTextChangeListener(new PinCode.OnTextChangeListener() {
+            @Override
+            public void onTextChanged(String text) {
+                // this method will be called when text change
+            }
+
+            @Override
+            public void onAllBoxFilled(String text) {
+// this method will be called when all boxes are filled
+            }
+        });
         pinCode.showText();
     }
 }

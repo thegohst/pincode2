@@ -13,7 +13,7 @@
             pin:highlightedBoxColor="@color/colorPrimary"
             pin:boxColor="@color/colorAccent"
             pin:boxCount="4"
-            pin:marginBetweenBox="0dp"
+            pin:marginBetweenBox="5dp"
             android:layout_width="wrap_content"
             android:id="@+id/pinCode"
             android:inputType="textVisiblePassword|number"

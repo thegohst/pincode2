@@ -15,7 +15,6 @@ import android.support.annotation.ColorInt;
 import android.support.annotation.DrawableRes;
 import android.text.InputFilter;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.TypedValue;
 
 import java.util.ArrayList;
@@ -29,8 +28,8 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
     private static final String TAG = PinCode.class.getSimpleName();
 
     private int itemCount = 4;
-    Paint paint;
-    Paint selectedRectPaint;
+   private Paint paint;
+   private Paint selectedRectPaint;
     Paint textPaint;
     int pad;
     private float underlineStrokeWidth;
@@ -119,7 +118,6 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
         }
 
         int marginBetweenBox = a.getDimensionPixelSize(R.styleable.PinCode_marginBetweenBox, -1);
-        Log.w(TAG, "mlika paddingLeft value:" + marginBetweenBox);
 
         if (marginBetweenBox != -1) {
             this.paddintLeft = marginBetweenBox;
@@ -317,7 +315,7 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
         try {
             if (changeListener != null) {
 
-                changeListener.onTextChnaged(text.toString());
+                changeListener.onTextChanged(text.toString());
 
                 if (text.length() == itemCount) {
 
@@ -458,7 +456,7 @@ public class PinCode extends android.support.v7.widget.AppCompatEditText {
 
     public interface OnTextChangeListener {
 
-        void onTextChnaged(String text);
+        void onTextChanged(String text);
 
         void onAllBoxFilled(String text);
 
