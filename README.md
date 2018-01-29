@@ -1,5 +1,5 @@
 
-&nbsp;&nbsp;&nbsp; If you find Pincode useful, give it a 🌟 
+&nbsp;&nbsp;&nbsp; If you find Pincode useful, please give it a 🌟 
 # Pincode
 
 ## Screenshot
