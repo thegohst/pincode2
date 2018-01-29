@@ -1,6 +1,5 @@
 
-&nbsp;&nbsp;&nbsp; If you find CookieBar2 useful, give it a 🌟 
-If you find CookieBar2 useful, give it a 
+&nbsp;&nbsp;&nbsp; If you find Pincode useful, give it a 🌟 
 # Pincode
 
 ## Screenshot
